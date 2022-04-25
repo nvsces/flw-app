@@ -17,12 +17,6 @@ class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    LoginRoute.name: (routeData) {
-      final args = routeData.argsAs<LoginRouteArgs>(
-          orElse: () => const LoginRouteArgs());
-      return MaterialPageX<dynamic>(
-          routeData: routeData, child: LoginPage(key: args.key));
-    },
     BaseRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
           routeData: routeData, child: const BasePage());
@@ -39,8 +33,7 @@ class _$AppRouter extends RootStackRouter {
 
   @override
   List<RouteConfig> get routes => [
-        RouteConfig(LoginRoute.name, path: '/'),
-        RouteConfig(BaseRoute.name, path: '/base-page', children: [
+        RouteConfig(BaseRoute.name, path: '/', children: [
           RouteConfig(TripRoute.name,
               path: 'trip-page', parent: BaseRoute.name),
           RouteConfig(ProfileRoute.name,
@@ -50,30 +43,10 @@ class _$AppRouter extends RootStackRouter {
 }
 
 /// generated route for
-/// [LoginPage]
-class LoginRoute extends PageRouteInfo<LoginRouteArgs> {
-  LoginRoute({Key? key})
-      : super(LoginRoute.name, path: '/', args: LoginRouteArgs(key: key));
-
-  static const String name = 'LoginRoute';
-}
-
-class LoginRouteArgs {
-  const LoginRouteArgs({this.key});
-
-  final Key? key;
-
-  @override
-  String toString() {
-    return 'LoginRouteArgs{key: $key}';
-  }
-}
-
-/// generated route for
 /// [BasePage]
 class BaseRoute extends PageRouteInfo<void> {
   const BaseRoute({List<PageRouteInfo>? children})
-      : super(BaseRoute.name, path: '/base-page', initialChildren: children);
+      : super(BaseRoute.name, path: '/', initialChildren: children);
 
   static const String name = 'BaseRoute';
 }
