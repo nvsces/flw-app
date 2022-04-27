@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flw_app/profile/domain/model/profile_model.dart';
+import 'package:flw_app/profile/domain/model/trip_model.dart';
 import 'package:flw_app/profile/domain/repository/profile_repository.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,6 +30,30 @@ class ProfileRepositoryApi extends ProfileRepository {
       return ProfileModel.fromMap(result);
     } else {
       throw Exception();
+    }
+  }
+
+  @override
+  Future<String> createTrip(TripModel trip) async {
+    final sharedPreferences = await SharedPreferences.getInstance();
+
+    const host = "http://45.67.59.215:8000";
+    var url = Uri.parse('$host/api/items/create');
+
+    var response = await http.post(
+      url,
+      headers: <String, String>{
+        'Content-Type': 'application/json',
+        'authorization':
+            'Bearer ' + (sharedPreferences.getString('token') ?? ''),
+      },
+      body: trip.toJson(),
+    );
+    print(response.body);
+    if (response.statusCode == 200) {
+      return '0';
+    } else {
+      return '1';
     }
   }
 }

@@ -29,7 +29,7 @@ class _ProfilePageState extends State<ProfilePage> {
           margin: const EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0),
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Colors.transparent,
             borderRadius: BorderRadius.circular(16.0),
           ),
           child: Padding(
@@ -44,7 +44,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     height: 200,
                   ).image,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 TextButton(
@@ -53,10 +53,11 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
                   child: Text(
                     model.name,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20.0,
                       color: Colors.black,
+                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ),
@@ -68,9 +69,13 @@ class _ProfilePageState extends State<ProfilePage> {
           padding: const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 40.0),
           child: RawMaterialButton(
             onPressed: () {
+              // showMaterialModalBottomSheet(
+              //   context: context,
+              //   builder: (context) => const CreateTripPage(),
+              // );
               showCupertinoModalBottomSheet(
                 topRadius: const Radius.circular(25.0),
-                expand: true,
+                expand: false,
                 context: context,
                 backgroundColor: Colors.transparent,
                 builder: (context) => const CreateTripPage(),
@@ -114,12 +119,23 @@ class _ProfilePageState extends State<ProfilePage> {
           child: BlocBuilder<ProfileBloc, ProfileState>(
               builder: ((context, state) {
             return CupertinoScaffold(
-              transitionBackgroundColor: Color(0xffe69528),
+              // transitionBackgroundColor: Color(0xffe69528),
               body: Container(
+                decoration: const BoxDecoration(
+                  color: const Color(0xfff6d7ae),
+                  // gradient: LinearGradient(
+                  //     begin: Alignment.topCenter,
+                  //     end: Alignment.bottomCenter,
+                  //     colors: [
+                  //       Color(0xffe69528),
+                  //       Colors.white,
+
+                  //       // Color(0xff521707),
+                  //     ]),
+                ),
                 child: Column(
                   children: [
                     Container(
-                      color: Color(0xffe69528),
                       height: 100.0,
                       width: MediaQuery.of(context).size.width,
                       child: Padding(
@@ -144,9 +160,9 @@ class _ProfilePageState extends State<ProfilePage> {
                               onPressed: () {
                                 context.read<AuthProvider>().logout();
                               },
-                              child: Text(
+                              child: const Text(
                                 'Выйти',
-                                style: const TextStyle(
+                                style: TextStyle(
                                   fontSize: 15.0,
                                   fontWeight: FontWeight.w600,
                                   color: Color(0xff521707),
