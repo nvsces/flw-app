@@ -197,6 +197,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.3"
+  date_picker_timeline:
+    dependency: "direct main"
+    description:
+      name: date_picker_timeline
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.3"
   date_time_picker:
     dependency: "direct main"
     description:
@@ -279,6 +286,11 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.0.0"
+  flutter_localizations:
+    dependency: "direct main"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   flutter_login_vk:
     dependency: "direct main"
     description:
@@ -409,7 +421,7 @@ packages:
     source: hosted
     version: "1.5.3"
   intl:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: intl
       url: "https://pub.dartlang.org"
@@ -496,6 +508,13 @@ packages:
     dependency: transitive
     description:
       name: nested
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  number_selection:
+    dependency: "direct main"
+    description:
+      name: number_selection
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
@@ -702,6 +721,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
+  simple_gradient_text:
+    dependency: "direct main"
+    description:
+      name: simple_gradient_text
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.3"
   sky_engine:
     dependency: transitive
     description: flutter

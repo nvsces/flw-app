@@ -33,7 +33,7 @@ class BottomNavigationBarCustom extends StatefulWidget {
 class _BottomNavigationBarCustomState extends State<BottomNavigationBarCustom> {
   @override
   Widget build(BuildContext context) {
-    final activeColor = AppThemeProvider.of(context).theme.colorTheme.accent;
+    const activeColor = Color(0xffe69528);
     return Container(
       decoration: const BoxDecoration(
           color: Colors.white,

@@ -10,7 +10,7 @@ class ProfileRepositoryApi extends ProfileRepository {
   Future<ProfileModel> fetchInfo() async {
     final sharedPreferences = await SharedPreferences.getInstance();
 
-    const host = "http://45.67.59.215:8080";
+    const host = "http://45.67.59.215:8000";
     var url = Uri.parse('$host/api/profile');
 
     var response = await http.get(
@@ -24,6 +24,8 @@ class ProfileRepositoryApi extends ProfileRepository {
     print(response.body);
     if (response.statusCode == 200) {
       var result = json.decode(utf8.decode(response.bodyBytes));
+      result['photo_url'] =
+          'https://sun9-38.userapi.com/s/v1/if2/6xM6omCHAoTBlOaQU9ZhXxv6w8gVzjb3M6BiugXiOWH8tuxAfWWXoEhO_OgHVM58FQ23dqC6RX5ZEC-n3s5LaJig.jpg?size=1620x2160&quality=96&type=album';
       return ProfileModel.fromMap(result);
     } else {
       throw Exception();

@@ -8,6 +8,7 @@ import 'package:flw_app/login/auth_provider.dart';
 import 'package:flw_app/profile/domain/bloc/profile_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 class FlwApp extends StatelessWidget {
   const FlwApp({Key? key}) : super(key: key);
@@ -70,6 +71,13 @@ class _ThemedApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [const Locale('ru', '')],
       theme: ThemeData(
         colorScheme: ColorScheme(
           primary: appTheme.colorTheme.accent,

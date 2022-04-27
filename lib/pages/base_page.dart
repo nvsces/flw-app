@@ -15,38 +15,36 @@ class BasePage extends StatelessWidget {
   Widget build(BuildContext context) {
     print('build base page');
     var isAuth = context.watch<AuthProvider>().logged;
-    return SafeArea(
-      child: !isAuth
-          ? LoginPage()
-          : AutoTabsRouter(
-              routes: const [TripRoute(), ProfileRoute()],
-              builder: (context, child, animation) {
-                final tabsRouter = AutoTabsRouter.of(context);
-                return Scaffold(
-                  body: FadeTransition(
-                    opacity: animation,
-                    child: child,
-                  ),
-                  bottomNavigationBar: BottomNavigationBarCustom(
-                    currentIndex: tabsRouter.activeIndex,
-                    onTap: (index) {
-                      // here we switch between tabs
-                      tabsRouter.setActiveIndex(index);
-                    },
-                    items: [
-                      BottomNavigationBarItemCustom(
-                        icon: HeroIcons.home,
-                        label: 'Главная',
-                      ),
-                      BottomNavigationBarItemCustom(
-                        icon: HeroIcons.identification,
-                        label: 'Профиль',
-                      )
-                    ],
-                  ),
-                );
-              },
-            ),
-    );
+    return !isAuth
+        ? LoginPage()
+        : AutoTabsRouter(
+            routes: const [TripRoute(), ProfileRoute()],
+            builder: (context, child, animation) {
+              final tabsRouter = AutoTabsRouter.of(context);
+              return Scaffold(
+                body: FadeTransition(
+                  opacity: animation,
+                  child: child,
+                ),
+                bottomNavigationBar: BottomNavigationBarCustom(
+                  currentIndex: tabsRouter.activeIndex,
+                  onTap: (index) {
+                    // here we switch between tabs
+                    tabsRouter.setActiveIndex(index);
+                  },
+                  items: [
+                    BottomNavigationBarItemCustom(
+                      icon: HeroIcons.home,
+                      label: 'Главная',
+                    ),
+                    BottomNavigationBarItemCustom(
+                      icon: HeroIcons.identification,
+                      label: 'Профиль',
+                    )
+                  ],
+                ),
+              );
+            },
+          );
   }
 }

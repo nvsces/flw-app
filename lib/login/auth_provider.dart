@@ -21,6 +21,8 @@ class AuthProvider extends ChangeNotifier {
   void checkAuth() async {
     print('start check');
     final sharedPreferences = await SharedPreferences.getInstance();
+    sharedPreferences.setString('token',
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE1NTQ1MDIsImlhdCI6MTY1MDgzNDUwMiwidXNlcl9pZCI6Mn0.ShL7F_8ErhyEkBKIZyEVi93KoSiDt85LsUepiH5TPwY');
     final token = sharedPreferences.getString('token');
     if (token != null) {
       logged = true;
@@ -60,7 +62,7 @@ class AuthProvider extends ChangeNotifier {
   }
 
   Future<String> loginServer(UserModel user) async {
-    const host = "http://45.67.59.215:8080";
+    const host = "http://45.67.59.215:8000";
     var url = Uri.parse('$host/auth/login');
     final data = user.toMap();
 
