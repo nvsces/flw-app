@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flw_app/home/domain/bloc/home_bloc.dart';
 import 'package:flw_app/login/auth_provider.dart';
 import 'package:flw_app/login/login_page.dart';
 import 'package:heroicons/heroicons.dart';
@@ -31,6 +32,9 @@ class BasePage extends StatelessWidget {
                   onTap: (index) {
                     // here we switch between tabs
                     tabsRouter.setActiveIndex(index);
+                    if (index == 0) {
+                      context.read<HomeBloc>().add(HomeEvent.read());
+                    }
                   },
                   items: [
                     BottomNavigationBarItemCustom(

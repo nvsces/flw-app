@@ -21,8 +21,6 @@ class AuthProvider extends ChangeNotifier {
   void checkAuth() async {
     print('start check');
     final sharedPreferences = await SharedPreferences.getInstance();
-    sharedPreferences.setString('token',
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE1NTQ1MDIsImlhdCI6MTY1MDgzNDUwMiwidXNlcl9pZCI6Mn0.ShL7F_8ErhyEkBKIZyEVi93KoSiDt85LsUepiH5TPwY');
     final token = sharedPreferences.getString('token');
     if (token != null) {
       logged = true;

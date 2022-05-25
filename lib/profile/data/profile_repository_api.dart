@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flw_app/profile/domain/model/profile_model.dart';
 import 'package:flw_app/profile/domain/model/trip_model.dart';
 import 'package:flw_app/profile/domain/repository/profile_repository.dart';
@@ -25,8 +26,6 @@ class ProfileRepositoryApi extends ProfileRepository {
     print(response.body);
     if (response.statusCode == 200) {
       var result = json.decode(utf8.decode(response.bodyBytes));
-      result['photo_url'] =
-          'https://sun9-38.userapi.com/s/v1/if2/6xM6omCHAoTBlOaQU9ZhXxv6w8gVzjb3M6BiugXiOWH8tuxAfWWXoEhO_OgHVM58FQ23dqC6RX5ZEC-n3s5LaJig.jpg?size=1620x2160&quality=96&type=album';
       return ProfileModel.fromMap(result);
     } else {
       throw Exception();
@@ -51,6 +50,14 @@ class ProfileRepositoryApi extends ProfileRepository {
     );
     print(response.body);
     if (response.statusCode == 200) {
+      Fluttertoast.showToast(
+          msg: "Поездка успешно создана",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.CENTER,
+          timeInSecForIosWeb: 1,
+          // backgroundColor: Colors.red,
+          // textColor: Colors.white,
+          fontSize: 16.0);
       return '0';
     } else {
       return '1';

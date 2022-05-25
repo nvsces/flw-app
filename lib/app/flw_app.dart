@@ -4,6 +4,7 @@ import 'package:flw_app/app/router/app_router.dart';
 import 'package:flw_app/app/theme/app_theme_provider_widget.dart';
 import 'package:flw_app/app/theme/bloc/app_theme.dart';
 import 'package:flw_app/app/theme/bloc/app_theme_bloc.dart';
+import 'package:flw_app/home/domain/bloc/home_bloc.dart';
 import 'package:flw_app/login/auth_provider.dart';
 import 'package:flw_app/profile/domain/bloc/profile_bloc.dart';
 import 'package:get_it/get_it.dart';
@@ -42,6 +43,8 @@ class _ThemebleWidget extends StatelessWidget {
       create: (context) => AuthProvider()..checkAuth(),
       child: MultiBlocProvider(
         providers: [
+          BlocProvider(
+              create: (ctx) => HomeBloc()..add(const HomeEvent.read())),
           BlocProvider<AppThemeBloc>(
             create: (ctx) => GetIt.I.get(),
           ),
