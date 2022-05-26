@@ -22,6 +22,8 @@ jobs:
 #         working-directory: android
       - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
         working-directory: android
+      - run: fastlane install_plugins
+        working-directory: android
       - run: fastlane add_plugin firebase_app_distribution
         working-directory: android
 #       - run: fastlane run update_fastlane
