@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
         working-directory: android
+      - run: sudo gem install fastlane
+        working-directory: android
       - run: sudo gem install fastlane-plugin-firebase_app_distribution
         working-directory: android
       - uses: actions/checkout@v3
