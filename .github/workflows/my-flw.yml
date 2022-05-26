@@ -19,8 +19,6 @@ jobs:
         working-directory: android
       - run: sudo gem install fastlane-plugin-firebase_app_distribution
         working-directory: android
-      - run: ls -s
-        working-directory: android
       - uses: actions/checkout@v3
       - uses: subosito/flutter-action@v2
         with:
