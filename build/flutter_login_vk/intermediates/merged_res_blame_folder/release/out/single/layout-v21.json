@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/nvsces/source/fellow-travelers/flw_app/build/flutter_login_vk/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/1d638fb0d0a69c9c511453e04cb9a264/core-1.7.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/nvsces/source/fellow-travelers/flw_app/build/flutter_login_vk/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/1d638fb0d0a69c9c511453e04cb9a264/core-1.7.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/nvsces/source/fellow-travelers/flw_app/build/flutter_login_vk/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/1d638fb0d0a69c9c511453e04cb9a264/core-1.7.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/nvsces/source/fellow-travelers/flw_app/build/flutter_login_vk/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/1d638fb0d0a69c9c511453e04cb9a264/core-1.7.0/res/layout-v21/notification_action.xml"
+    }
+]

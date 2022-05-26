@@ -1,0 +1,317 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.nvsces.zm.fellow_travelers_zm"
+4    android:versionCode="5"
+5    android:versionName="0.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:7:5-81
+12-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:8:5-66
+13-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:8:22-63
+14    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+14-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:9:5-81
+14-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+15-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:10:5-79
+15-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:10:22-76
+16
+17    <queries>
+17-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:61:5-76:15
+18
+19        <!-- For auth with vk client -->
+20        <intent>
+20-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:64:9-66:18
+21            <action android:name="com.vkontakte.android.action.SDK_AUTH" />
+21-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:65:13-76
+21-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:65:21-73
+22        </intent>
+23
+24        <!-- For available browsers request -->
+25        <intent>
+25-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:69:9-75:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:70:13-65
+26-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:70:21-62
+27
+28            <category android:name="android.intent.category.BROWSABLE" />
+28-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:72:13-74
+28-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:72:23-71
+29
+30            <data android:scheme="http" />
+30-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:74:13-43
+30-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:74:19-40
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:78:5-79
+34-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:78:22-76
+35    <uses-permission android:name="android.permission.WAKE_LOCK" />
+35-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5f8918c5a231ceaf01512ba04f25c9ab/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:24:5-68
+35-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5f8918c5a231ceaf01512ba04f25c9ab/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:24:22-65
+36    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
+36-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:5-110
+36-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:22-107
+37    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+37-->[com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/72bcba41e2102d142a3bafeb9d17168a/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:5-79
+37-->[com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/72bcba41e2102d142a3bafeb9d17168a/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:22-76
+38
+39    <application
+40        android:name="android.app.Application"
+40-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:10:9-42
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.7.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/1d638fb0d0a69c9c511453e04cb9a264/core-1.7.0/AndroidManifest.xml:24:18-86
+42        android:icon="@mipmap/ic_launcher"
+42-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:11:9-43
+43        android:label="fellow_travelers_zm" >
+43-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:9:9-44
+44        <activity
+44-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:13:9-33:20
+45            android:name="com.nvsces.zm.fellow_travelers_zm.MainActivity"
+45-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:14:13-41
+46            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+46-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:18:13-163
+47            android:exported="true"
+47-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:15:13-36
+48            android:hardwareAccelerated="true"
+48-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:19:13-47
+49            android:launchMode="singleTop"
+49-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:16:13-43
+50            android:theme="@style/LaunchTheme"
+50-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:17:13-47
+51            android:windowSoftInputMode="adjustResize" >
+51-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:20:13-55
+52
+53            <!--
+54                 Specifies an Android theme to apply to this Activity as soon as
+55                 the Android process has started. This theme is visible to the user
+56                 while the Flutter UI initializes. After that, this theme continues
+57                 to determine the Window background behind the Flutter UI.
+58            -->
+59            <meta-data
+59-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:25:13-28:17
+60                android:name="io.flutter.embedding.android.NormalTheme"
+60-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:26:15-70
+61                android:resource="@style/NormalTheme" />
+61-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:27:15-52
+62
+63            <intent-filter>
+63-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:29:13-32:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:30:17-68
+64-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:30:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:31:17-76
+66-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:31:27-74
+67            </intent-filter>
+68        </activity>
+69        <activity
+69-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:35:12-37:50
+70            android:name="com.vk.sdk.VKServiceActivity"
+70-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:35:22-65
+71            android:label="ServiceActivity"
+71-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:36:10-41
+72            android:theme="@style/VK.Transparent" />
+72-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:37:10-47
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:40:9-42:33
+78            android:name="flutterEmbedding"
+78-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:41:13-44
+79            android:value="2" />
+79-->/Users/nvsces/source/fellow-travelers/flw_app/android/app/src/main/AndroidManifest.xml:42:13-30
+80
+81        <receiver
+81-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:13:9-15:40
+82            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+82-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:14:13-97
+83            android:exported="false" />
+83-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:15:13-37
+84        <receiver
+84-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:16:9-25:20
+85            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+85-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:17:13-101
+86            android:exported="false" >
+86-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:18:13-37
+87            <intent-filter>
+87-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:19:13-24:29
+88                <action android:name="android.intent.action.BOOT_COMPLETED" />
+88-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:20:17-79
+88-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:20:25-76
+89                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+89-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:21:17-84
+89-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:21:25-81
+90                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+90-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:22:17-82
+90-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:22:25-79
+91                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+91-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:23:17-82
+91-->[:flutter_local_notifications] /Users/nvsces/source/fellow-travelers/flw_app/build/flutter_local_notifications/intermediates/library_manifest/release/AndroidManifest.xml:23:25-79
+92            </intent-filter>
+93        </receiver>
+94
+95        <activity
+95-->[:url_launcher_android] /Users/nvsces/source/fellow-travelers/flw_app/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+96            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+96-->[:url_launcher_android] /Users/nvsces/source/fellow-travelers/flw_app/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+97            android:exported="false"
+97-->[:url_launcher_android] /Users/nvsces/source/fellow-travelers/flw_app/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+98            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+98-->[:url_launcher_android] /Users/nvsces/source/fellow-travelers/flw_app/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+99
+100        <service
+100-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/31d62c63d331a34b395324ec0f028a22/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:8:9-14:19
+101            android:name="com.google.firebase.components.ComponentDiscoveryService"
+101-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/31d62c63d331a34b395324ec0f028a22/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:9:13-84
+102            android:directBootAware="true"
+102-->[com.google.firebase:firebase-common:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+103            android:exported="false" >
+103-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/31d62c63d331a34b395324ec0f028a22/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:10:13-37
+104            <meta-data
+104-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/31d62c63d331a34b395324ec0f028a22/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:11:13-13:85
+105                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+105-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/31d62c63d331a34b395324ec0f028a22/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:12:17-126
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/31d62c63d331a34b395324ec0f028a22/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:13:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
+108                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+108-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:16:17-113
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/efdec004161c0ef706d8ec293e62acc1/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:17:17-82
+110            <meta-data
+110-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5f8918c5a231ceaf01512ba04f25c9ab/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:30:13-32:85
+111                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+111-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5f8918c5a231ceaf01512ba04f25c9ab/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:31:17-139
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5f8918c5a231ceaf01512ba04f25c9ab/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:32:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-installations:17.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+114                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+114-->[com.google.firebase:firebase-installations:17.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-installations:17.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/b646a1c3488e0fa90dc6654323ab235e/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+116        </service>
+117
+118        <activity
+118-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:82:9-84:53
+119            android:name="com.vk.api.sdk.ui.VKWebViewAuthActivity"
+119-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:83:13-67
+120            android:theme="@style/VK.Transparent" />
+120-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:84:13-50
+121        <activity
+121-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:85:9-87:75
+122            android:name="com.vk.api.sdk.ui.VKCaptchaActivity"
+122-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:86:13-63
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+123-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:87:13-72
+124        <activity
+124-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:88:9-90:75
+125            android:name="com.vk.api.sdk.ui.VKConfirmationActivity"
+125-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:89:13-68
+126            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+126-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:90:13-72
+127
+128        <provider
+128-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:92:9-96:40
+129            android:name="com.vk.api.sdk.internal.VKInitProvider"
+129-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:93:13-66
+130            android:authorities="com.nvsces.zm.fellow_travelers_zm.VKInitProvider"
+130-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:94:13-66
+131            android:enabled="@bool/com_vk_sdk_init_provider_enabled"
+131-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:95:13-69
+132            android:exported="false" />
+132-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:96:13-37
+133
+134        <meta-data
+134-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:98:9-100:37
+135            android:name="VKSdkVersion"
+135-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:99:13-40
+136            android:value="3.5.0" />
+136-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:100:13-34
+137        <meta-data
+137-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:101:9-103:34
+138            android:name="VKSdkVersionCode"
+138-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:102:13-44
+139            android:value="30" />
+139-->[com.vk:android-sdk-core:3.5.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/AndroidManifest.xml:103:13-31
+140
+141        <uses-library
+141-->[androidx.window:window:1.0.0-beta04] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/a5f385ef45530604007d550e11076bc8/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+142            android:name="androidx.window.extensions"
+142-->[androidx.window:window:1.0.0-beta04] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/a5f385ef45530604007d550e11076bc8/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+143            android:required="false" />
+143-->[androidx.window:window:1.0.0-beta04] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/a5f385ef45530604007d550e11076bc8/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+144        <uses-library
+144-->[androidx.window:window:1.0.0-beta04] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/a5f385ef45530604007d550e11076bc8/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+145            android:name="androidx.window.sidecar"
+145-->[androidx.window:window:1.0.0-beta04] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/a5f385ef45530604007d550e11076bc8/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+146            android:required="false" />
+146-->[androidx.window:window:1.0.0-beta04] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/a5f385ef45530604007d550e11076bc8/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+147
+148        <provider
+148-->[com.google.firebase:firebase-common:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+149            android:name="com.google.firebase.provider.FirebaseInitProvider"
+149-->[com.google.firebase:firebase-common:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+150            android:authorities="com.nvsces.zm.fellow_travelers_zm.firebaseinitprovider"
+150-->[com.google.firebase:firebase-common:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+151            android:directBootAware="true"
+151-->[com.google.firebase:firebase-common:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+152            android:exported="false"
+152-->[com.google.firebase:firebase-common:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+153            android:initOrder="100" />
+153-->[com.google.firebase:firebase-common:20.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/245f1b766dee744d57b07a368f37da5b/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+154
+155        <receiver
+155-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:29:9-33:20
+156            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+156-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:30:13-85
+157            android:enabled="true"
+157-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:31:13-35
+158            android:exported="false" >
+158-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:32:13-37
+159        </receiver>
+160
+161        <service
+161-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:35:9-38:40
+162            android:name="com.google.android.gms.measurement.AppMeasurementService"
+162-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:36:13-84
+163            android:enabled="true"
+163-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:37:13-35
+164            android:exported="false" />
+164-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:38:13-37
+165        <service
+165-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:39:9-43:72
+166            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+166-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:40:13-87
+167            android:enabled="true"
+167-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:41:13-35
+168            android:exported="false"
+168-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:42:13-37
+169            android:permission="android.permission.BIND_JOB_SERVICE" />
+169-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/4d67cdf06be562af1e3b14f6f7e02204/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:43:13-69
+170
+171        <meta-data
+171-->[com.google.android.gms:play-services-basement:18.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5abb6b57d6ccb1f3e678a4fbc9e41fff/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+172            android:name="com.google.android.gms.version"
+172-->[com.google.android.gms:play-services-basement:18.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5abb6b57d6ccb1f3e678a4fbc9e41fff/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+173            android:value="@integer/google_play_services_version" />
+173-->[com.google.android.gms:play-services-basement:18.0.0] /Users/nvsces/.gradle/caches/transforms-2/files-2.1/5abb6b57d6ccb1f3e678a4fbc9e41fff/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+174    </application>
+175
+176</manifest>

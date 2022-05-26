@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/nvsces/source/fellow-travelers/flw_app/build/flutter_login_vk/intermediates/incremental/mergeReleaseResources/merged.dir/values-ru/values-ru.xml",
+            "map": [
+                {
+                    "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,122,175,255",
+                        "endColumns": "66,52,79,46",
+                        "endOffsets": "117,170,250,297"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,223,276,356",
+                        "endColumns": "66,52,79,46",
+                        "endOffsets": "218,271,351,398"
+                    }
+                },
+                {
+                    "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/1d638fb0d0a69c9c511453e04cb9a264/core-1.7.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/nvsces/source/fellow-travelers/flw_app/build/flutter_login_vk/intermediates/res/merged/release/values-ru/values-ru.xml",
+            "map": [
+                {
+                    "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/ab446060dfcb49650529a02254daaa79/jetified-android-sdk-core-3.5.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,122,175,255",
+                        "endColumns": "66,52,79,46",
+                        "endOffsets": "117,170,250,297"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,223,276,356",
+                        "endColumns": "66,52,79,46",
+                        "endOffsets": "218,271,351,398"
+                    }
+                },
+                {
+                    "source": "/Users/nvsces/.gradle/caches/transforms-2/files-2.1/1d638fb0d0a69c9c511453e04cb9a264/core-1.7.0/res/values-ru/values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

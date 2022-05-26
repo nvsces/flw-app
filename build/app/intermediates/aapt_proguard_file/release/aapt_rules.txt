@@ -1,0 +1,16 @@
+-keep class android.app.Application { <init>(); }
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver { <init>(); }
+-keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.nvsces.zm.fellow_travelers_zm.MainActivity { <init>(); }
+-keep class com.vk.api.sdk.internal.VKInitProvider { <init>(); }
+-keep class com.vk.api.sdk.ui.VKCaptchaActivity { <init>(); }
+-keep class com.vk.api.sdk.ui.VKConfirmationActivity { <init>(); }
+-keep class com.vk.api.sdk.ui.VKWebViewAuthActivity { <init>(); }
+-keep class com.vk.sdk.VKServiceActivity { <init>(); }
+-keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }

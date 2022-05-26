@@ -1,0 +1,4 @@
+#Thu May 26 17:12:19 MSK 2022
+base.0=/Users/nvsces/source/fellow-travelers/flw_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,2 @@
+ru/innim/flutter_login_vk/BuildConfig.java
+ ru.innim.flutter_login_vk.BuildConfig
