@@ -16,7 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: cd android
-        working-directory: android
       - run: sh fastlane_install.sh
         working-directory: android
       - run: fastlane add_plugin firebase_app_distribution
@@ -26,6 +25,7 @@ jobs:
       - run: fastlane run update_fastlane
         working-directory: android
       - run: fastlane beta
+        working-directory: android
         env:
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
 
