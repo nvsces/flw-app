@@ -14,12 +14,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: cd /home/runner/work/flw-app
-      - run: ls -s
-      - run: sudo apt install ruby ruby-dev
-      - run: sudo gem install fastlane
-      - run: fastlane add_plugin firebase_app_distribution
-      - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
-      - run: fastlane beta
-        env:
-          FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+#       - run: cd /home/runner/work/flw-app
+#       - run: ls -s
+#       - run: sudo apt install ruby ruby-dev
+#       - run: sudo gem install fastlane
+#       - run: fastlane add_plugin firebase_app_distribution
+#       - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
+#       - run: fastlane beta
+#       - uses: actions/checkout@v2
+        - uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: '2.7.2'
+        - uses: maierj/fastlane-action@v2.2.0
+          env:
+            FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+          with:
+            lane: 'beta'
+            subdirectory: 'android'
+
