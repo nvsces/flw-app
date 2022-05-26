@@ -28,6 +28,9 @@ jobs:
 #         working-directory: android
 #       - run: fastlane run update_fastlane
 #         working-directory: android
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'stable'
       - run: fastlane beta
         working-directory: android
         env:
