@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
+      - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.json
         working-directory: android
       - run: sudo gem install fastlane
         working-directory: android
