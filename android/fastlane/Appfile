@@ -1,0 +1,2 @@
+json_key_file("/Users/nvsces/keystores/flw-json.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name("com.nvsces.zm.fellow_travelers_zm") # e.g. com.krausefx.app
