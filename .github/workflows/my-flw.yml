@@ -25,15 +25,14 @@ jobs:
         working-directory: android
       - run: ls -s
         working-directory: android
-#         working-directory: android
-#       - uses: actions/checkout@v3
-#       - uses: subosito/flutter-action@v2
-#         with:
-#           channel: 'stable'
-#       - run: ls -s
-#         working-directory: android
-#       - run: fastlane beta
-#         working-directory: android
-#         env:
-#           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - run: ls -s
+        working-directory: android
+      - run: fastlane beta
+        working-directory: android
+        env:
+          FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
 
