@@ -17972,6 +17972,6 @@ kotlin.KotlinVersion:
 org.threeten.bp.chrono.ChronoLocalDate$1
 com.google.android.gms.measurement.internal.zzec:
     private java.lang.String zze
+io.flutter.plugin.common.BinaryMessenger$-CC
 io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
-io.flutter.plugin.common.BinaryMessenger$-CC
