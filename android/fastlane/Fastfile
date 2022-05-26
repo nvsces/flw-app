@@ -18,7 +18,7 @@ lane :beta do
   #   sh("flutter", "build", "apk", "--build-number=#{build_number}")
   # end
   firebase_app_distribution(
-    app: "$System.env.FIREBASE_APP_ID",
+    app: "1:228570277845:android:9fe73993563ac12a1fff5c",
     apk_path: '../build/app/outputs/flutter-apk/app-release.apk',
     service_credentials_file:'key.json',
     groups: "test"
