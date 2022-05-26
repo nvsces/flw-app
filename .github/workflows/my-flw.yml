@@ -17,10 +17,10 @@ jobs:
       - run: sudo apt install ruby ruby-dev
       - run: sudo gem install fastlane
       - run: fastlane add_plugin firebase_app_distribution
-        working-directory: android
+        working-directory: ../android
       - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
-        working-directory: android
+        working-directory: ../android
       - run: fastlane beta
-        working-directory: android
+        working-directory: ../android
         env:
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
