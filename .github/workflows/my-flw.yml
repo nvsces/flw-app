@@ -14,7 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - run: sudo apt install ruby ruby-dev
+      - run: sudo gem install fastlane
+      - run: fastlane add_plugin firebase_app_distribution
       - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
       - run: fastlane beta
         env:
