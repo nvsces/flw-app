@@ -15,15 +15,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - run: cd android
-      - run: sh fastlane_install.sh
-        working-directory: android
-      - run: fastlane add_plugin firebase_app_distribution
-        working-directory: android
+#       - run: cd android
+#       - run: sh fastlane_install.sh
+#         working-directory: android
+#       - run: fastlane add_plugin firebase_app_distribution
+#         working-directory: android
       - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.jks
         working-directory: android
-      - run: fastlane run update_fastlane
-        working-directory: android
+#       - run: fastlane run update_fastlane
+#         working-directory: android
       - run: fastlane beta
         working-directory: android
         env:
