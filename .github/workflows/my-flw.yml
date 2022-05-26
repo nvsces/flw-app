@@ -24,8 +24,8 @@ jobs:
         working-directory: android
       - run: sudo gem install fastlane-plugin-firebase_app_distribution
         working-directory: android
-      - run: fastlane add_plugin firebase_app_distribution
-        working-directory: android
+#       - run: fastlane add_plugin firebase_app_distribution
+#         working-directory: android
 #       - run: fastlane run update_fastlane
 #         working-directory: android
       - run: fastlane beta
