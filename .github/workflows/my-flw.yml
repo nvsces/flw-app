@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: ./cd android
+      - run: ll -s
       - run: sudo apt install ruby ruby-dev
       - run: sudo gem install fastlane
       - run: fastlane add_plugin firebase_app_distribution
