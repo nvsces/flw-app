@@ -15,10 +15,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.json
-        working-directory: android
-      - run: ls -s
-        working-directory: android
       - run: sudo gem install fastlane
         working-directory: android
       - run: sudo gem install fastlane-plugin-firebase_app_distribution
@@ -29,6 +25,10 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
+      - run: ls -s
+        working-directory: android
+      - run: echo ${{ secrets.FIREBASE_CLI }} | base64 --decode > key.json
+        working-directory: android
       - run: ls -s
         working-directory: android
       - run: fastlane beta
